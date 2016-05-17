@@ -19,7 +19,7 @@ def monitor(filename):
 
     while(1):
         md5 = fabMD5(filename)
-        if( md5 != md5track):
-            time.sleep(5)
+        time.sleep(5)
+        if(md5 != md5track):
             print filename + " changed"
             md5track = md5
